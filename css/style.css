@@ -104,7 +104,12 @@ a:focus {
 .header_section .header_top .contact_nav a {
   color: #ffffff;
 }
-
+@media (max-width: 776px) {
+  .header_section .header_top .contact_nav a {
+    font-size: 12px;
+    color: #ffffff;
+  }
+}
 .header_section .header_top .contact_nav a i {
   color: #ff8a1d;
 }
