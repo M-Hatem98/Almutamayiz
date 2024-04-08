@@ -33,7 +33,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="home">
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
@@ -55,59 +55,64 @@
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
               <a class="navbar-brand" href="index.html">
-                <span>
-                  <img src="images/LOGO.png" alt="" />
-                </span>
+                  <span>
+                      <img src="images/LOGO.png" alt="" />
+                  </span>
               </a>
-
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class=""> </span>
+          
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
               </button>
-
+          
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html"
-                      >Home <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <a id="homeLink" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="aboutLink" class="nav-link" href="about.html"> About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="servicesLink" class="nav-link" href="service.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="contactLink" class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+          
+                  <!-- Language Flags -->
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" onclick="switchLanguage('en')">
+                              <img src="images/english_flag.png" alt="English Flag" style="width: 30px; height: auto;">
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" onclick="switchLanguage('ar')">
+                              <img src="images/arabic_flag.png" alt="Arabic Flag" style="width: 30px; height: auto;">
+                          </a>
+                      </li>
+                  </ul>
               </div>
-            </nav>
+          </nav>
+          
           </div>
         </div>
       </header>
       <!-- end header section -->
       <!-- slider section -->
-      <section class="slider_section">
+      <section class="slider_section" id="sliderSection">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="detail-box">
-                <h1>Repair and Maintenance Services</h1>
-                <p>
-                  “Expert care for your comfort :
-                  <span class="webname">Almutamayiz</span> for air conditioning,
-                  refrigeration and electronics maintenance services”
+                <h1 id="sliderHeading">خدمات الصيانة والإصلاح</h1>
+                <p id="sliderParagraph">
+                  "رعاية متخصصة لراحتك:
+                  <span class="webname">المتميز</span> لخدمات صيانة أجهزة التكييف الهوائي، التبريد، وصيانة الإلكترونيات"
                 </p>
-                <a href="contact.html"> Contact Us </a>
+                <a href="contact.html" id="sliderLink">تواصل معنا</a>
               </div>
             </div>
             <div class="col-md-6">
@@ -122,7 +127,7 @@
     </div>
 
     <!-- feature section -->
-    <section class="feature_section">
+    <section class="feature_section" id="featureSection">
       <div class="container">
         <div class="feature_container">
           <div class="box">
@@ -203,12 +208,12 @@
 
     <!-- about section -->
 
-    <section class="about_section layout_padding-bottom">
+    <section class="about_section layout_padding-bottom" id="aboutSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-md-6">
             <div class="detail-box">
-              <h2>About us</h2>
+              <h2 id="abouttitle">About us</h2>
               <p>
                 At <span class="webname">Almutamayiz</span>, we specialize in
                 providing top-notch services in the maintenance, washing,
@@ -230,7 +235,7 @@
                 professional, and personalized service tailored to meet your
                 specific requirements.
               </p>
-              <a href=""> Read More </a>
+              <a href="" id="aboutreadMoreLink"> Read More </a>
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
@@ -246,7 +251,7 @@
 
     <!-- professional section -->
 
-    <section class="professional_section layout_padding">
+    <section class="professional_section layout_padding" id="professionalSection">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -256,7 +261,7 @@
           </div>
           <div class="col-md-6">
             <div class="detail-box">
-              <h2>Professional Home Services by Almutamayiz</h2>
+              <h2 id="professionaltitle">Professional Home Services by Almutamayiz</h2>
               <p>
                 At <span class="webname">Almutamayiz </span>, we take pride in
                 offering comprehensive home services tailored to meet your
@@ -264,12 +269,6 @@
                 professional solutions for all your home maintenance
                 requirements. From installation to repairs, we specialize in:
               </p>
-              <!-- <ol>
-                <li><span class="webname">Air Conditioning Maintenance, Washing, Installation, and Supply: </span> Ensure the optimal performance of your air conditioning units with our expert services. We handle everything from regular maintenance to installations and supply of high-quality AC units.</li>
-                <li><span class="webname">Gas Oven and Stove Maintenance: </span>Trust us to keep your gas ovens and stoves in top condition. Our technicians are adept at diagnosing and repairing issues to ensure safe and efficient operation.</li>
-                <li><span class="webname">Automatic Washing Machine Maintenance:</span>Keep your laundry routine uninterrupted with our washing machine maintenance services. We ensure your automatic washing machines are functioning smoothly.</li>
-                <li><span class="webname">Central Heater Maintenance:</span> Stay warm and cozy during the colder months with our central heater maintenance services. We ensure your heating system is running efficiently to provide you with comfort when you need it most.</li>
-              </ol> -->
               <div class="accordion" id="accordionExample">
                 <div class="card">
                   <div class="card-header" id="headingOne">
@@ -405,261 +404,129 @@
 
     <!-- service section -->
 
-    <section class="service_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Our Services</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s3.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Air Conditioning Services</h5>
-                <p>
-                  Keep comfortable year-round with our expert AC services,
-                  covering installation, maintenance, and repairs for optimal
-                  performance.
-                </p>
-              </div>
-            </div>
+    <!-- Your HTML content -->
+<section class="service_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2 id="servicesHeading">Our Services</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/s3.png" alt="">
           </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s1.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Maintenance</h5>
-                <p>
-                  Trust our technicians for thorough upkeep of gas ovens,
-                  stoves, and other appliances to ensure safe and efficient
-                  operation.
-                </p>
-              </div>
-            </div>
+          <div class="detail-box">
+            <h5 id="service1Title">Air Conditioning Services</h5>
+            <p id="service1Text">
+              Keep comfortable year-round with our expert AC services, covering installation, maintenance, and repairs for optimal performance.
+            </p>
           </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s2.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Electrical</h5>
-                <p>
-                  Count on us for prompt and reliable repairs of washing
-                  machines, dryers, refrigerators, and more to keep your
-                  household running smoothly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href=""> View More </a>
         </div>
       </div>
-    </section>
-
-    <!-- end service section -->
-
-    <!-- client section -->
-    <!-- 
-  <section class="client_section ">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          What Our Clients Say
-        </h2>
+      <div class="col-sm-6 col-md-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/s1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5 id="service2Title">Maintenance</h5>
+            <p id="service2Text">
+              Trust our technicians for thorough upkeep of gas ovens, stoves, and other appliances to ensure safe and efficient operation.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="carousel-wrap layout_padding2-top ">
-        <div class="owl-carousel">
-          <div class="item">
-            <div class="box">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client-1.jpg" alt="">
-                </div>
-                <div class="client_detail">
-                  <div class="client_info">
-                    <h6>
-                      Jorch morik
-                    </h6>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="client_text">
-                <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
-                </p>
-              </div>
-            </div>
+      <div class="col-sm-6 col-md-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/s2.png" alt="">
           </div>
-          <div class="item">
-            <div class="box">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client-2.jpg" alt="">
-                </div>
-                <div class="client_detail">
-                  <div class="client_info">
-                    <h6>
-                      Jorch morik
-                    </h6>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="client_text">
-                <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client-1.jpg" alt="">
-                </div>
-                <div class="client_detail">
-                  <div class="client_info">
-                    <h6>
-                      Jorch morik
-                    </h6>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="client_text">
-                <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="images/client-2.jpg" alt="">
-                </div>
-                <div class="client_detail">
-                  <div class="client_info">
-                    <h6>
-                      Jorch morik
-                    </h6>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="client_text">
-                <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
-                </p>
-              </div>
-            </div>
+          <div class="detail-box">
+            <h5 id="service3Title">Electrical</h5>
+            <p id="service3Text">
+              Count on us for prompt and reliable repairs of washing machines, dryers, refrigerators, and more to keep your household running smoothly.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-
-    <!-- end client section -->
+    <div class="btn-box">
+      <a href="" id="service4Text"> View More </a>
+    </div>
+  </div>
+</section>
 
     <!-- contact section -->
 
-    <section class="contact_section pt-0 layout_padding">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Contact Us</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="mianul">
-              <li class="mainli">
-                Address
-                <ul>
-                  <li>5 Al Ham Street -</li>
-                  <li>Downtown -</li>
-                  <li>Abu Dhabi -</li>
-                  <li>Al Ain City -</li>
-                  <li>United Arab Emirates</li>
-                </ul>
-              </li>
-              <li class="mainli">Contacts</li>
-              <ul class="link_list">
-                <li class="contactss">
-                  Email :
-                  <ul>
-                    <li>mohamedaldeab2024@gmail.com</li>
-                  </ul>
-                </li>
-                <li class="contactss">
-                  Phone :
-                  <ul>
-                    <li>+971 52 249 4959</li>
-                    <li>+971 55 741 3438</li>
-                  </ul>
-                </li>
-                <li class="contactss">
-                  Whatsapp :
-                  <ul>
-                    <li>+971 52 249 4959</li>
-                  </ul>
-                </li>
-              </ul>
+   <!-- Your HTML content -->
+<section class="contact_section pt-0 layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2 id="contactHeading">Contact Us</h2>
+    </div>
+    <div class="row" id="contactrow">
+      <div class="col-md-6" id="contact">
+        <ul class="mianul" id="contactList">
+          <li class="mainli">
+            Address
+            <ul>
+              <li>5 Al Ham Street -</li>
+              <li>Downtown -</li>
+              <li>Abu Dhabi -</li>
+              <li>Al Ain City -</li>
+              <li>United Arab Emirates</li>
             </ul>
-          </div>
-          <div class="col-md-6">
-            <div class="map_container">
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3638.357249366967!2d55.7594442850094!3d24.22928078435552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDEzJzQ1LjQiTiA1NcKwNDUnMjYuMSJF!5e0!3m2!1sar!2seg!4v1712235738363!5m2!1sar!2seg"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
+          </li>
+          <li class="mainli" id="contactsLabel">Contacts</li>
+          <ul class="link_list">
+            <li class="contactss">
+              Email :
+              <ul>
+                <li>mohamedaldeab2024@gmail.com</li>
+              </ul>
+            </li>
+            <li class="contactss">
+              Phone :
+              <ul>
+                <li>+971 52 249 4959</li>
+                <li>+971 55 741 3438</li>
+              </ul>
+            </li>
+            <li class="contactss">
+              Whatsapp :
+              <ul>
+                <li>+971 52 249 4959</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div class="map_container">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3638.357249366967!2d55.7594442850094!3d24.22928078435552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDEzJzQ1LjQiTiA1NcKwNDUnMjYuMSJF!5e0!3m2!1sar!2seg!4v1712235738363!5m2!1sar!2seg"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- end contact section -->
 
     <!-- info section -->
     <section class="info_section">
       <div class="container">
-        <h4>Get In Touch</h4>
+        <h4 id="infotitle">Get In Touch</h4>
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div class="info_items">
@@ -670,7 +537,7 @@
                       <div class="img-box">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
-                      <p>5 Al Ham Street - Downtown - Abu Dhabi - Al Ain City - United Arab Emirates</p>
+                      <p id="infoaddress">5 Al Ham Street - Downtown - Abu Dhabi - Al Ain City - United Arab Emirates</p>
                     </div>
                   </a>
                 </div>
@@ -719,6 +586,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/switchlanguage.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->

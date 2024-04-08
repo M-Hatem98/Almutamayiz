@@ -33,7 +33,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="about-us">
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
@@ -55,59 +55,63 @@
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
               <a class="navbar-brand" href="index.html">
-                <span>
-                  <img src="images/LOGO.png" alt="" />
-                </span>
+                  <span>
+                      <img src="images/LOGO.png" alt="" />
+                  </span>
               </a>
-
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class=""> </span>
+          
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
               </button>
-
+          
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html"
-                      >Home <span class="sr-only">(current)</span></a
-                    >
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a id="homeLink" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a id="aboutLink" class="nav-link" href="about.html"> About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="servicesLink" class="nav-link" href="service.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="contactLink" class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+          
+                  <!-- Language Flags -->
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" onclick="switchLanguage('en')">
+                              <img src="images/english_flag.png" alt="English Flag" style="width: 30px; height: auto;">
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" onclick="switchLanguage('ar')">
+                              <img src="images/arabic_flag.png" alt="Arabic Flag" style="width: 30px; height: auto;">
+                          </a>
+                      </li>
+                  </ul>
               </div>
-            </nav>
+          </nav>
           </div>
         </div>
       </header>
       <!-- end header section -->
       <!-- slider section -->
-      <section class="slider_section">
+      <section class="slider_section" id="sliderSection">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="detail-box">
-                <h1>Repair and Maintenance Services</h1>
-                <p>
-                  “Expert care for your comfort :
-                  <span class="webname">Almutamayiz</span> for air conditioning,
-                  refrigeration and electronics maintenance services”
+                <h1 id="sliderHeading">خدمات الصيانة والإصلاح</h1>
+                <p id="sliderParagraph">
+                  "رعاية متخصصة لراحتك:
+                  <span class="webname">المتميز</span> لخدمات صيانة أجهزة التكييف الهوائي، التبريد، وصيانة الإلكترونيات"
                 </p>
-                <a href="contact.html"> Contact Us </a>
+                <a href="contact.html" id="sliderLink">تواصل معنا</a>
               </div>
             </div>
             <div class="col-md-6">
@@ -121,8 +125,7 @@
       <!-- end slider section -->
     </div>
 
-    <!-- feature section -->
-    <section class="feature_section">
+    <section class="feature_section" id="featureSection">
       <div class="container">
         <div class="feature_container">
           <div class="box">
@@ -203,12 +206,12 @@
 
     <!-- about section -->
 
-    <section class="about_section layout_padding-bottom">
+    <section class="about_section layout_padding-bottom" id="aboutSection">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-md-6">
             <div class="detail-box">
-              <h2>About us</h2>
+              <h2 id="abouttitle">About us</h2>
               <p>
                 At <span class="webname">Almutamayiz</span>, we specialize in
                 providing top-notch services in the maintenance, washing,
@@ -230,7 +233,7 @@
                 professional, and personalized service tailored to meet your
                 specific requirements.
               </p>
-              <a href=""> Read More </a>
+              <a href="" id="aboutreadMoreLink"> Read More </a>
             </div>
           </div>
           <div class="col-lg-7 col-md-6">
@@ -244,51 +247,52 @@
 
     <!-- end about section -->
 
+
     <!-- info section -->
     <section class="info_section">
-    <div class="container">
-      <h4>Get In Touch</h4>
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <div class="info_items">
-            <div class="row">
-              <div class="col-md-4">
-                <a href="https://maps.app.goo.gl/dtGJEY94vvfck8MPA">
-                  <div class="item">
-                    <div class="img-box">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <div class="container">
+        <h4 id="infotitle">Get In Touch</h4>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="info_items">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="https://maps.app.goo.gl/dtGJEY94vvfck8MPA">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </div>
+                      <p id="infoaddress">5 Al Ham Street - Downtown - Abu Dhabi - Al Ain City - United Arab Emirates</p>
                     </div>
-                    <p>5 Al Ham Street - Downtown - Abu Dhabi - Al Ain City - United Arab Emirates</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="tel:+971 52 249 4959">
-                  <div class="item">
-                    <div class="img-box">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="tel:+971 52 249 4959">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </div>
+                      <p> +971 52 249 4959</p>
                     </div>
-                    <p> +971 52 249 4959</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="mailto:mohamedaldeab2024@gmail.com">
-                  <div class="item">
-                    <div class="img-box">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="mailto:mohamedaldeab2024@gmail.com">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
+                      <p>mohamedaldeab2024@gmail.com</p>
                     </div>
-                    <p>mohamedaldeab2024@gmail.com</p>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
- 
-  </section>
+   
+    </section>
 
     <!-- end info_section -->
 
@@ -307,6 +311,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/switchlanguage.js"></script>
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->
